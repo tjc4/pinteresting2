@@ -13,6 +13,9 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+  # Added so Devise knows the correct links to put in emails to users (e.g. reset pass email) 
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 

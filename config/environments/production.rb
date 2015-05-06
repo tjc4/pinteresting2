@@ -75,4 +75,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Added so Devise knows the correct links to put in emails to users (e.g. reset pass email) 
+  config.action_mailer.default_url_options = { host: "http://sheltered-shelf-3033.herokuapp.com" }
+
 end
