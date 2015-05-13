@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0' #squiggly line means it can upgrade to 2.x but not 3.0
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 group :development, :test do
 	gem 'sqlite3'

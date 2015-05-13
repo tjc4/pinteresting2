@@ -37,4 +37,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
+  # this is the path to file.exe which I had to install for windows "spoofing" in paperclip
+
+
 end
